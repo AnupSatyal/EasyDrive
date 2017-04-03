@@ -54,20 +54,12 @@ public class LoginActivity extends AppCompatActivity  {
         Button button1= (Button) findViewById(R.id.btn_signup);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-               /* if(CheckFieldValidation()) {
-                    Intent i= new Intent(LoginActivity.this,MainActivity.class);
-                    startActivity(i);
-                }*/
-               Signin(v);
+                   Signin(v);
                }
         });
         button1.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-               /* if(CheckFieldValidation()) {
-                    Intent i= new Intent(LoginActivity.this,MainActivity.class);
-                    startActivity(i);
-                }*/
-                SignUp(v);
+                        SignUp(v);
             }
         });
     }
