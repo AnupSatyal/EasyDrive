@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="prompt_email">Почта</string>
+    <string name="prompt_password">Пароль (необязательно)</string>
+    <string name="action_sign_in">Войти или зарегистрироваться</string>
+    <string name="action_sign_in_short">Войти</string>
+    <string name="error_invalid_email">Почтовый адрес недействителен</string>
+    <string name="error_invalid_password">Пароль слишком короткий</string>
+    <string name="error_incorrect_password">Неверный пароль</string>
+    <string name="error_field_required">Необходимо заполнить поле</string>
+    <string name="hint_search">Поиск</string>
+    <string name="hint_email">         Почта</string>
+    <string name="hint_licence">Номер лицензии</string>
+    <string name="hint_password">       Пароль</string>
+    <string name="discription">Описание</string>
+    <string name="hint_name">Полное имя</string>
+    <string name="btn_login">ВОЙТИ</string>
+    <string name="btn_register">РЕГИСТРАЦИЯ</string>
+    <string name="btn_link_to_register">Еще нет аккаунта? Зарегистрироваться сейчас.</string>
+    <string name="btn_link_to_login">Уже есть аккаунт! Войти в систему.</string>
+    <string name="permission_rationale">"Разрешить доступ для подтверждения электронной почты."</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="hello_round">Привет круглый мир!</string>
+    <string name="hello_square">Привет квадратный мир!</string>
+    <string name="strings.xml">ru</string>
+</resources>
