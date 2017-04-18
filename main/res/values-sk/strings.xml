@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Heslo (voliteľne)</string>
+    <string name="action_sign_in">Prihláste sa alebo zaregistrujte</string>
+    <string name="action_sign_in_short">Prihlásiť sa</string>
+    <string name="error_invalid_email">Táto e-mailová adresa je neplatná</string>
+    <string name="error_invalid_password">Toto heslo je príliš krátke</string>
+    <string name="error_incorrect_password">Toto heslo je nesprávne</string>
+    <string name="error_field_required">Toto pole je vyžadované</string>
+    <string name="hint_search">Vyhľadávanie</string>
+    <string name="hint_email">         Email</string>
+    <string name="hint_licence">číslo licencie</string>
+    <string name="hint_password">       heslo</string>
+    <string name="discription">popis</string>
+    <string name="hint_name">Celé meno</string>
+    <string name="btn_login">PRIHLÁSIŤ SA</string>
+    <string name="btn_register">REGISTROVAŤ</string>
+    <string name="btn_link_to_register">Nie ste členom? Registrovať.</string>
+    <string name="btn_link_to_login">Už zaregistrované! Prihlásenie Me.</string>
+    <string name="permission_rationale">"Kontakty oprávnenia sú potrebné pre zaistenie e-mailových doplnenie v."</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="hello_round">Hello Round World!</string>
+    <string name="hello_square">Hello Square World!</string>
+</resources>

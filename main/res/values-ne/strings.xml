@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Strings related to login -->
+    <string name="prompt_email">इमेल</string>
+    <string name="prompt_password">पासवर्ड (वैकल्पिक)</string>
+    <string name="action_sign_in">साइन इन गर्नुहोस् वा दर्ता</string>
+    <string name="action_sign_in_short">साइन इन</string>
+    <string name="error_invalid_email">यो इमेल ठेगाना अमान्य छ</string>
+    <string name="error_invalid_password">यो पासवर्ड निकै छोटो छ</string>
+    <string name="error_incorrect_password">यो पासवर्ड गलत छ</string>
+    <string name="error_field_required">यो क्षेत्र आवश्यक छ</string>
+    <string name="hint_search">खोज</string>
+    <string name="hint_email">         इमेल</string>
+    <string name="hint_licence">लाइसेन्स नम्बर</string>
+    <string name="hint_password">       पासवर्ड</string>
+    <string name="discription">विवरण</string>
+    <string name="hint_name">पुरा नाम</string>
+    <string name="btn_login">लग - इन</string>
+    <string name="btn_register">दर्ता</string>
+    <string name="btn_link_to_register">एक सदस्य छैन? अब साइन अप.</string>
+    <string name="btn_link_to_login">पहिले नै दर्ता! लगइन मलाई।</string>
+    <string name="permission_rationale">"सम्पर्क अनुमति इमेल सम्पूर्णता प्रदान लागि आवश्यक छन्।"</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="hello_round">Hello Round World!</string>
+    <string name="hello_square">Hello Square World!</string>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Mật khẩu (tùy chọn)</string>
+    <string name="action_sign_in">Đăng nhập hoặc đăng ký</string>
+    <string name="action_sign_in_short">Đăng nhập</string>
+    <string name="error_invalid_email">Địa chỉ email này không hợp lệ</string>
+    <string name="error_invalid_password">Mật khẩu này quá ngắn</string>
+    <string name="error_incorrect_password">Mật khẩu này không chính xác</string>
+    <string name="error_field_required">Lĩnh vực này là bắt buộc</string>
+    <string name="hint_search">Tìm kiếm</string>
+    <string name="hint_email">         Email</string>
+    <string name="hint_licence">Số giấy phép</string>
+    <string name="hint_password">       Mật khẩu</string>
+    <string name="discription">sự miêu tả</string>
+    <string name="hint_name">Họ và tên</string>
+    <string name="btn_login">ĐĂNG NHẬP</string>
+    <string name="btn_register">GHI DANH</string>
+    <string name="btn_link_to_register">Không phải là thành viên? Đăng ký ngay bây giờ.</string>
+    <string name="btn_link_to_login">Đã đăng ký! Đăng nhập Me.</string>
+    <string name="permission_rationale">"Giấy phép liên hệ là cần thiết để cung cấp sự hoàn thành email."</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="hello_round">Hello Round World!</string>
+    <string name="hello_square">Hello Square World!</string>
+</resources>
