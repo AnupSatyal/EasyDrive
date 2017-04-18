@@ -1,5 +1,6 @@
 package com.easydrivesdp2.easy;
         import android.content.Intent;
+        import android.content.res.Configuration;
         import android.content.res.TypedArray;
         import android.os.Bundle;
         import android.support.v7.app.ActionBarActivity;
@@ -13,6 +14,8 @@ package com.easydrivesdp2.easy;
         import android.widget.ImageView;
         import android.widget.Spinner;
         import android.widget.TextView;
+
+        import java.util.Locale;
 
         import static android.provider.AlarmClock.EXTRA_MESSAGE;
 
@@ -75,10 +78,71 @@ public class LanguageActivity extends ActionBarActivity {
 // Handle action bar item clicks here. The action bar will
 // automatically handle clicks on the Home/Up button, so long
 // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-//noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        boolean change=false;
+
+        String languageToLoad;
+
+        switch (item.getItemId()) {
+            case R.id.en:
+                languageToLoad = "en";
+                Locale locale = new Locale(languageToLoad);
+                Locale.setDefault(locale);
+                Configuration config = new Configuration();
+                config.locale = locale;
+                getBaseContext().getResources().updateConfiguration(config,
+                        getBaseContext().getResources().getDisplayMetrics());
+                this.setContentView(R.layout.activity_main);
+                change=true;
+                break;
+            case R.id.ne:
+                languageToLoad = "ne";
+                locale = new Locale(languageToLoad);
+                Locale.setDefault(locale);
+                config = new Configuration();
+                config.locale = locale;
+                getBaseContext().getResources().updateConfiguration(config,
+                        getBaseContext().getResources().getDisplayMetrics());
+                this.setContentView(R.layout.activity_main);
+                change=true;
+                break;
+            case R.id.ru:
+                languageToLoad = "ru";
+                locale = new Locale(languageToLoad);
+                Locale.setDefault(locale);
+                config = new Configuration();
+                config.locale = locale;
+                getBaseContext().getResources().updateConfiguration(config,
+                        getBaseContext().getResources().getDisplayMetrics());
+                this.setContentView(R.layout.activity_main);
+                change=true;
+                break;
+            case R.id.sk:
+                languageToLoad = "sk";
+                locale = new Locale(languageToLoad);
+                Locale.setDefault(locale);
+                config = new Configuration();
+                config.locale = locale;
+                getBaseContext().getResources().updateConfiguration(config,
+                        getBaseContext().getResources().getDisplayMetrics());
+                this.setContentView(R.layout.activity_main);
+                change=true;
+                break;
+            case R.id.vi:
+                languageToLoad = "vi";
+                locale = new Locale(languageToLoad);
+                Locale.setDefault(locale);
+                config = new Configuration();
+                config.locale = locale;
+                getBaseContext().getResources().updateConfiguration(config,
+                        getBaseContext().getResources().getDisplayMetrics());
+                this.setContentView(R.layout.activity_main);
+                change=true;
+                break;
+            default:
+                break;
+        }
+        if (change == true){
+            recreate();
         }
         return super.onOptionsItemSelected(item);
     }
@@ -87,6 +151,5 @@ public class LanguageActivity extends ActionBarActivity {
         startActivity(intent);
 
     }
-
 }
 
