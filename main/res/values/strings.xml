@@ -36,18 +36,18 @@
     <string name="option_select">Choose Language</string>
     
     <string-array name="object_array">
+
+       <item id="@+id/en">English (UK)</item>
         
-        <item>English (UK)</item>
+        <item id="@+id/ru">Russian</item>
         
-        <item>Russian</item>
+        <item id="@+id/sk">Slovak</item>
         
-        <item>Slovak</item>
+        <item id="@+id/ne">Nepali</item>
         
-        <item>Nepali</item>
+
         
-        <item>Vietnamese</item>
-        
-    </string-array>
+    </string-array> -->
     
     <integer-array name="object_image">
         
@@ -59,7 +59,7 @@
         
         <item>@drawable/nepal</item>
         
-        <item>@drawable/vietnam</item>
+
         
     </integer-array>
     

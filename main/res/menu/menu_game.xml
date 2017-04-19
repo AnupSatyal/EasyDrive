@@ -1,27 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
-xmlns:app="http://schemas.android.com/apk/res-auto">
-<item
-    android:title="Select language"
-    app:showAsAction="always">
-    <menu>
-        <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/en"
-            android:title="en" />
-        <item
-            android:id="@+id/ne"
-            android:title="ne" />
-        <item
-            android:id="@+id/ru"
-            android:title="ru" />
-        <item
-            android:id="@+id/sk"
-            android:title="sk" />
-        <item
-            android:id="@+id/vi"
-            android:title="vi" />
-        </group>
-    </menu>
-</item>
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="language setting!"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/en"
+        android:title="English"
+        android:titleCondensed="en"/>
+    <item
+        android:id="@+id/ru"
+        android:title="Russian"
+        android:titleCondensed="ru"/>
+    <item
+        android:id="@+id/ne"
+        android:title="Nepali"
+        android:titleCondensed="ne"/>
+    <item
+        android:id="@+id/sk"
+        android:title="Slovak"
+        android:titleCondensed="k"/>
 </menu>

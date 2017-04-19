@@ -36,7 +36,7 @@ public class SplashScreen extends Activity {
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.lang, menu);
+        getMenuInflater().inflate(R.menu.menu_game, menu);
         return true;
     }
 
