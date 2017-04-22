@@ -7,10 +7,10 @@ package com.easydrivesdp2.easy;
         import android.widget.AutoCompleteTextView;
         import android.widget.Button;
         import android.widget.EditText;
-
 /**
  * A login screen that offers login via email/password.
  */
+
 public class LoginActivity extends AppCompatActivity  {
 
     /**
@@ -77,11 +77,12 @@ public class LoginActivity extends AppCompatActivity  {
     private boolean CheckFieldValidation(){
 
         boolean valid=true;
+
         if(email.getText().toString().equals("")){
-            email.setError("Can't be Empty");
+            email.setError(getString(R.string.text1));
             valid=false;
         }else if(pass.getText().toString().equals("")){
-            pass.setError("Can't be Empty");
+            pass.setError(getString(R.string.text1));
             valid=false;
         }
 

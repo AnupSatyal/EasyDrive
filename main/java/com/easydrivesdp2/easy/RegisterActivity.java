@@ -61,13 +61,13 @@ public class RegisterActivity extends AppCompatActivity {
 
         boolean valid=true;
         if(name.getText().toString().equals("")){
-            name.setError("Can't be Empty");
+            name.setError(getString(R.string.text1));
             valid=false;
         }else if(pass.getText().toString().equals("")){
-            pass.setError("Can't be Empty");
+            pass.setError(getString(R.string.text1));
             valid=false;
         }else if(email.getText().toString().equals("")){
-            email.setError("Can't be Empty");
+            email.setError(getString(R.string.text1));
             valid=false;
         }
 
