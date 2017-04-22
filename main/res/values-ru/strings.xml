@@ -23,4 +23,5 @@
     <string name="hello_round">Привет круглый мир!</string>
     <string name="hello_square">Привет квадратный мир!</string>
     <string name="strings.xml">ru</string>
+    <string name="text1">Заполните поле!</string>
 </resources>
