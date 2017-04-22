@@ -2,7 +2,7 @@
 <resources>
     <!-- Strings related to login -->
     <string name="prompt_email">इमेल</string>
-    <string name="prompt_password">पासवर्ड (वैकल्पिक)</string>
+    <string name="prompt_pass">पासवर्ड (वैकल्पिक)</string>
     <string name="action_sign_in">साइन इन गर्नुहोस् वा दर्ता</string>
     <string name="action_sign_in_short">साइन इन</string>
     <string name="error_invalid_email">यो इमेल ठेगाना अमान्य छ</string>
@@ -12,7 +12,7 @@
     <string name="hint_search">खोज</string>
     <string name="hint_email">         इमेल</string>
     <string name="hint_licence">लाइसेन्स नम्बर</string>
-    <string name="hint_password">       पासवर्ड</string>
+    <string name="hint_pass1">       पासवर्ड</string>
     <string name="discription">विवरण</string>
     <string name="hint_name">पुरा नाम</string>
     <string name="btn_login">लग - इन</string>
@@ -23,5 +23,12 @@
     <string name="title_activity_main2">Main2Activity</string>
     <string name="hello_round">Hello Round World!</string>
     <string name="hello_square">Hello Square World!</string>
-    <string name="text1">खाली हुन सक्दैन!</string>
+    <string name="hint_pass2">पासवर्ड सुनिश्चित गर्नुहोस</string>
+    <string name="hint_hello">
+सजिलो ड्राइभमा स्वागत छ।
+यो मोबाइल आवेदन ड्राइभिङ गर्दा आफ्नो बाटो मा ट्राफिक संकेत थाहा मद्दत गर्नेछ।
+तपाईंको यन्त्र राम्रो परिणाम लागि स्थिर पकड। हामीलाई छनौट को लागि धन्यवाद! ड्राइभ सुरक्षित।</string>
+    <string name="hint_close">बन्द</string>
+    <string name="hint_got">बुझे</string>
+    <string name="hello">नमस्कार, </string>
 </resources>

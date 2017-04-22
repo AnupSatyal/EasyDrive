@@ -3,7 +3,7 @@
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
-    <string name="prompt_password">Heslo (voliteľne)</string>
+    <string name="prompt_pass">Heslo (voliteľne)</string>
     <string name="action_sign_in">Prihláste sa alebo zaregistrujte</string>
     <string name="action_sign_in_short">Prihlásiť sa</string>
     <string name="error_invalid_email">Táto e-mailová adresa je neplatná</string>
@@ -13,7 +13,7 @@
     <string name="hint_search">Vyhľadávanie</string>
     <string name="hint_email">         Email</string>
     <string name="hint_licence">číslo licencie</string>
-    <string name="hint_password">       heslo</string>
+    <string name="hint_pass1">       heslo</string>
     <string name="discription">popis</string>
     <string name="hint_name">Celé meno</string>
     <string name="btn_login">PRIHLÁSIŤ SA</string>
@@ -24,5 +24,11 @@
     <string name="title_activity_main2">Main2Activity</string>
     <string name="hello_round">Hello Round World!</string>
     <string name="hello_square">Hello Square World!</string>
-    <string name="text1">Nemôže byť prázdny!</string>
+    <string name="hint_pass2">Potvrď heslo</string>
+    <string name="hint_hello">Добро пожаловать в Easy Drive.
+Это мобильное приложение поможет узнать дорожные сигналы на вашем пути во время вождения.
+Держите устройство устойчивым для лучшего результата. Спасибо, что выбрали нас! Езди осторожно.</string>
+    <string name="hint_close">Zavrieť</string>
+    <string name="hint_got">Mám to</string>
+    <string name="hello">Ahoj, </string>
 </resources>

@@ -20,19 +20,24 @@ public class SplashScreen extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splashscreen);
 
-        Thread timerThread = new Thread(){
-            public void run(){
-                try{
+        Thread timerThread = new Thread() {
+            public void run() {
+                try {
                     sleep(3000);
-                }catch(InterruptedException e){
+                } catch (InterruptedException e) {
                     e.printStackTrace();
-                }finally{
-                    Intent intent = new Intent(SplashScreen.this,LanguageActivity.class);
+                } finally {
+                    Intent intent = new Intent(SplashScreen.this, LanguageActivity.class);
                     startActivity(intent);
                 }
             }
         };
         timerThread.start();
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_game, menu);
+        return true;
     }
 
     @Override
@@ -41,7 +46,5 @@ public class SplashScreen extends Activity {
         super.onPause();
         finish();
     }
-
-
-
 }
+

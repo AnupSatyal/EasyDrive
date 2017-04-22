@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="prompt_email">Почта</string>
-    <string name="prompt_password">Пароль (необязательно)</string>
+    <string name="prompt_pass">Пароль (необязательно)</string>
     <string name="action_sign_in">Войти или зарегистрироваться</string>
     <string name="action_sign_in_short">Войти</string>
     <string name="error_invalid_email">Почтовый адрес недействителен</string>
@@ -11,7 +11,7 @@
     <string name="hint_search">Поиск</string>
     <string name="hint_email">         Почта</string>
     <string name="hint_licence">Номер лицензии</string>
-    <string name="hint_password">       Пароль</string>
+    <string name="hint_pass1">       Пароль</string>
     <string name="discription">Описание</string>
     <string name="hint_name">Полное имя</string>
     <string name="btn_login">ВОЙТИ</string>
@@ -23,5 +23,11 @@
     <string name="hello_round">Привет круглый мир!</string>
     <string name="hello_square">Привет квадратный мир!</string>
     <string name="strings.xml">ru</string>
-    <string name="text1">Заполните поле!</string>
+    <string name="hint_pass2">Подтвердите Пароль</string>
+    <string name="hint_hello">Добро пожаловать в Easy Drive.
+Это мобильное приложение поможет узнать дорожные сигналы на вашем пути во время вождения.
+Держите устройство устойчивым для лучшего результата. Спасибо, что выбрали нас! Езди осторожно.</string>
+    <string name="hint_close">Закрыть</string>
+    <string name="hint_got">Понял</string>
+    <string name="hello">Здравствуйте, </string>
 </resources>

@@ -68,7 +68,8 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/red"
         android:gravity="center"
-        android:text="Close"
+        android:onClick="CloseonClick"
+        android:text="@string/hint_close"
         android:textColor="@color/white" />
 
 </LinearLayout>

@@ -1,77 +1,76 @@
 package com.easydrivesdp2.easy;
 
+        import android.app.Activity;
+        import android.content.Intent;
         import android.os.Bundle;
 
-        import android.content.Intent;
-        import android.graphics.Color;
-        import android.graphics.drawable.ColorDrawable;
-        import android.support.v7.app.ActionBarActivity;
-        import android.support.v7.app.AppCompatActivity;
-        import android.text.Html;
         import android.view.View;
-        import android.view.WindowManager;
-        import android.widget.Button;
         import android.widget.EditText;
+        import android.widget.Toast;
 
 
-public class RegisterActivity extends AppCompatActivity {
-    EditText email, pass, name;
+public class RegisterActivity extends Activity {
+
+
+    DatabaseHelper helper = new DatabaseHelper(this);
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.resistor);
+        setContentView(R.layout.register);
 
-        Button button= (Button) findViewById(R.id.btn_signup);
-        Button button1= (Button) findViewById(R.id.btnLinkToLoginScreen);
-        button.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Register(v);
-            }
-        });
-        button1.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                Intent a= new Intent(RegisterActivity.this,LoginActivity.class);
-                startActivity(a);
-            }
-        });
-
-        name = (EditText) findViewById(R.id.id);
-        pass = (EditText) findViewById(R.id.name);
-        email = (EditText) findViewById(R.id.email);
-
-/*
-        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#ffffff")));
-        getSupportActionBar().setTitle(Html.fromHtml("<font color='#e12929'>Sign Up</font>"));
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-*/
 
     }
-    //When Button Sign up clicked
-    public void Register(View v){
-    if (CheckFieldValidation()) {
+    public void onButtonClick(View v){
         Intent i = new Intent(RegisterActivity.this, LoginActivity.class);
         startActivity(i);
     }
-    }
 
-    //checking field are empty
-    private boolean CheckFieldValidation(){
 
-        boolean valid=true;
-        if(name.getText().toString().equals("")){
-            name.setError(getString(R.string.text1));
-            valid=false;
-        }else if(pass.getText().toString().equals("")){
-            pass.setError(getString(R.string.text1));
-            valid=false;
-        }else if(email.getText().toString().equals("")){
-            email.setError(getString(R.string.text1));
-            valid=false;
+    public void onRegisterClick(View v) {
+
+        {
+            if (v.getId() == R.id.Bregister) {
+                EditText name = (EditText) findViewById(R.id.TFname);
+                EditText licence = (EditText) findViewById(R.id.TFlicence);
+                EditText email = (EditText) findViewById(R.id.TFemail);
+                EditText pass1 = (EditText) findViewById(R.id.TFpass1);
+                EditText pass2 = (EditText) findViewById(R.id.TFpass2);
+
+
+                String namestr = name.getText().toString();
+                String licencestr = licence.getText().toString();
+                String emailstr = email.getText().toString();
+                String pass1str = pass1.getText().toString();
+                String pass2str = pass2.getText().toString();
+
+
+                if (!pass1str.equals(pass2str)) {
+                    //popup msg
+
+                    Toast pass = Toast.makeText(RegisterActivity.this, "Passwords don't match!", Toast.LENGTH_SHORT);
+                    pass.show();
+                } else
+
+                {
+
+
+                    //insert the details in database
+                    Contact c = new Contact();
+                    c.setName(namestr);
+                    c.setLicence(licencestr);
+                    c.setEmail(emailstr);
+                    c.setPass(pass1str);
+
+                    helper.insertContact(c);
+
+
+                }
+            }
+
+
         }
-
-        return valid;
 
     }
 }
